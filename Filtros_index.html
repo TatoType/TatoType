@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>TatoType - Filtro de Imagem</title>
+    <link href="styles/Filtros_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js'></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="img/Logo.png" alt="Logo do Site TatoType">
+            <a href="index.html">TatoType</a>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Sobre</a></li>
+                    <li><a href="Filtros_index.html" id="a_unable">Filtro de Imagem</a></li>
+                    <li><a href="Cor_index.html">Coletor de Cores</a></li>
+                    <li><a href="Leitor_index.html">Leitor de Texto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="Title">
+        <h1>Filtro de Imagem</h1>
+        <p>Adicione filtros para visualizar a imagem de formas diferente!</p>
+    </div>
+    <div class="layout_filtro">
+        <div class="layout_canvas">
+            <div id="aboutBox" class="boxed"></div>
+            <canvas id="Canvas" width="800" height="300">Seu navegador não suporta &lt;canvas&gt;. Faça um
+                aprimoramento!</canvas>
+            <label for="fileInput" class="file_label">
+                <i class="fas fa-file-image"></i> Seleciona uma imagem
+            </label>
+            <input type="file" id="fileInput" class="file_input" />
+            <label onclick="panZoomImage.translateX=0;panZoomImage.translateY=0;panZoomImage.scale=1;
+                panZoomImage.redraw();" class="file_label_2">
+                <i class="fas fa-undo"></i>
+                <a href="#" target="blank" id="imageLink" style="display: none"></a>
+                <span id="loadingIndicator" style="display:none; font-size: 16px;">Carregando...</span>
+            </label>
+        </div>
+        <div class="layout_botoes">
+            <label class="layout_radiobutton">Normal
+                <input type="radio" checked="checked" name="colorblindType" value="Normal">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Protanopia
+                <input type="radio" name="colorblindType" value="Protanopia">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Protanomalia
+                <input type="radio" name="colorblindType" value="Protanomaly">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Deuteranopia
+                <input type="radio" name="colorblindType" value="Deuteranopia">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Deuteranomalia
+                <input type="radio" name="colorblindType" value="Deuteranomaly">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Tritanopia
+                <input type="radio" name="colorblindType" value="Tritanopia">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Tritanomalia
+                <input type="radio" name="colorblindType" value="Tritanomaly">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Acromatopsia
+                <input type="radio" name="colorblindType" value="Achromatopsia">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_label" style="margin-left: 1em;display: none;">Severidade:<input type="range" min="0" max="100" value="50"
+                    class="slider" id="severity"></label>
+            <hr class="layout_hr">
+            <label class="layout_radiobutton">Sem Lentes
+                <input type="radio" checked="checked" name="lens" value="no">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Lentes Normais
+                <input type="radio" name="lens" value="Normal">
+                <span class="checkmark"></span>
+            </label>
+            <label class="layout_radiobutton">Lentes Invertidas
+                <input type="radio" name="lens" value="Inverse">
+                <span class="checkmark"></span>
+            </label>
+            <hide>
+                <div>
+                    <select id="method">
+                      <option value="simpl">Simple (ColorMatrix)</option>
+                    </select>
+                  </div>
+            </hide>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_content">
+            <img src="img/Logo.png" alt="Logo do Site TatoType">
+            <p class="rights">&copy; 2023 TatoType. Todos os direitos reservados.</p>
+        </div>
+        <hr>
+    </footer>
+
+    <script src="script/panZoomImage.js"></script>
+    <script src="script/colorblind.js"></script>
+    <script src="script/Filtros_script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
