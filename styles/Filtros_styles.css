@@ -211,6 +211,7 @@ header {
     width: 25px;
     background-color: #c3ced1;
     border-radius: 50%;
+    transition: background-color 0.3s;
 }
 
 .layout_radiobutton:hover input~.checkmark {
@@ -218,7 +219,15 @@ header {
 }
 
 .layout_radiobutton input:checked~.checkmark {
-    background-color: #09918a;
+    background-color: #ffcc00;
+}
+
+.layout_radiobutton input~.checkmark:hover {
+    background-color: #eebf03;
+}
+
+.layout_radiobutton input~.checkmark:active {
+    background-color: #d6ac04;
 }
 
 .checkmark:after {

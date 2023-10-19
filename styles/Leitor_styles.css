@@ -170,8 +170,17 @@ input[type="range"]::-webkit-slider-thumb {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: #085f5b;
+    background: #ffcc00;
     cursor: ew-resize;
+    transition: background-color 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #eebf03;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    background: #d6ac04;
 }
 
 footer {
