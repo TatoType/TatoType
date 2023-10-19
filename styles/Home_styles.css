@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eff4f5;
+}
+
+header {
+    background-color: #161616;
+    color: #eff4f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.header-left a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #eff4f5;
+    transition: color 0.3s;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.header-right li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header-right a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #eff4f5;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+.header-left a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#a_unable {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: #2c2c2c;
+}
+
+.layout_section_hr{
+    border-top: 2px solid #1f1f1f;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.layout_section_space{
+    background-color: #eff4f5;
+    margin-top: 150px;
+}
+
+.layout_section_space_small{
+    background-color: #eff4f5;
+    margin-top: 10px;
+}
+
+.layout_section_pages {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(193, 25%, 36%);
+    line-height: 1.5
+}
+
+.layout_left {
+    flex: 2;
+    background-color: #c3ced1;
+    padding: 20px;
+}
+
+.layout_right {
+    flex: 1;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-left: 5px solid #09918a;
+    position: relative;
+}
+
+.layout_section_pages_2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(193, 25%, 36%);
+    line-height: 1.5
+}
+
+.layout_left_2 {
+    flex: 2;
+    background-color: #c3ced1;
+    padding: 20px;
+}
+
+.layout_right_2 {
+    flex: 1;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-right: 5px solid #09918a;
+    position: relative;
+}
+
+.layout_section_pages h1{
+    color: #1f1f1f;
+    text-align: left;
+    font-weight: bold;
+}
+
+.layout_section_pages p{
+    margin-top: 20px;
+    color: #1f1f1f;
+    text-align: justify;
+    margin-right: 200px;
+}
+
+.layout_section_pages_2 h1{
+    color: #1f1f1f;
+    text-align: right;
+    font-weight: bold;
+}
+
+.layout_section_pages_2 p{
+    margin-top: 20px;
+    color: #1f1f1f;
+    text-align: justify;
+    margin-left: 200px;
+}
+
+.layout_section_title{
+    background-color: #161616;
+    padding: 20px;
+}
+
+.layout_section_title h1{
+    color: #eff4f5;
+    text-align: left;
+}
+
+.layout_section_sobre{
+    background-color: #1f1f1f;
+    padding: 20px;
+    color: #eff4f5;
+    line-height: 1.5
+}
+
+.layout_section_sobre p{
+    text-align: justify;
+    font-size: 16px;
+    margin-right: 200px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #eff4f5;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footer_content{
+    margin-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+footer hr{
+    border-top: 2px solid #eff4f5;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    width: 100%;
+}
+
+footer img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.page_button{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #09918a;
+    color: #eff4f5;
+    padding: 20px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    max-width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    right: 60px;
+}
+
+.page_button:hover {
+    background-color: #057a75;
+}
+
+.page_button:active {
+    background-color: #085f5b;
+}
